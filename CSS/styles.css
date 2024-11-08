@@ -279,3 +279,10 @@ li {
   margin-bottom: 10px;
   font-size: 14px;
 }
+
+/*Estilos sección nuestro trabajo*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

@@ -489,7 +489,7 @@ h2{
   height: auto;
   display: block;
   opacity: 0;
-  animation: fadeIn 8s forwards; /*añade animación*/
+  animation: fadeIn 4s forwards; /*añade animación*/
 }
 
 /*Definición de la animación*/

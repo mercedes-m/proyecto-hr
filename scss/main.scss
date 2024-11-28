@@ -1,99 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// main.scss
 
-// Variables
-$primary-color: #3498db;
-$hover-color: #2980b9;
-$font-family: "Roboto", sans-serif;
+// Importar variables
+@import 'variables';
 
-// Estilos Generales
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Importar reset de estilos
+@import 'reset';
 
-body{
-    font-family: $font-family;
-    line-height: 1.6;
-    color: #333;
-}
+// Importar tipografía
+@import 'typography';
 
-// Encabezados
-h1, h2, h3, h4 {
-    margin: 10px 0;
-}
+// Importar navegación
+@import 'navigation';
 
-// Navegación
-nav {
-    background-color: $primary-color;
-    padding: 10px;
+// Importar artículos
+@import 'articles';
 
-    ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: flex-end;
+// Importar imágenes
+@import 'images';
 
-        li {
-            margin-right: 20px;
+// Importar animaciones
+@import 'animations';
 
-            a{
-                color: white;
-                text-decoration: none;
-                font-weight: 500;
-                padding: 5px 10px;
-                border-radius: 5px;
-                transition: background-color 0.3s;
-
-                &:hover {
-                    background-color: $hover-color;
-                }
-            }
-        }
-    }
-}
-
-// Artículos
-article {
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-//Imágenes
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px;
-}
-
-//Animaciones
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-//Media Queries
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        padding: 10px;
-    }
-}
+// Importar media queries
+@import 'media-queries';
